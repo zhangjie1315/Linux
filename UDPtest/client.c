@@ -7,6 +7,9 @@
 #include <arpa/inet.h>
 #include <unistd.h>
 
+
+
+
 int main(int argc, char *argv[2]){
     if(argc != 3){
         printf("Usage:%s [ip] [port]",argv[0]);

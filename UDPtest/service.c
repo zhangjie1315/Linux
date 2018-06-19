@@ -17,17 +17,14 @@ int main(int argc, char *argv[]){
         perror("socket");
         return 2;
     }
-
     struct sockaddr_in local;
     local.sin_family = AF_INET;
     local.sin_port = htons(atoi(argv[2]));
     local.sin_addr.s_addr = inet_addr(argv[1]);
-
     if(bind(sock, (struct sockaddr*)&local,sizeof(local)) < 0){
         perror("bind");
         return 3;
     }
-
     char buf[1024];
     struct sockaddr_in client;
     while(1){

@@ -5,9 +5,12 @@
 #include<pthread.h>
 #include<sched.h>
 int ticket = 100;
+
 pthread_mutex_t mutex;
 
 void *route(void *arg)
+
+
 {
     char *id = (char*)arg;
     while(1)

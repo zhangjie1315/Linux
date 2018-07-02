@@ -1,7 +1,9 @@
 #include<stdio.h>
 #include<unistd.h>
 #include<stdlib.h>
+
 int main()
+
 {
 	pid_t id = fork();
 	if(id < 0)

@@ -4,7 +4,6 @@
 #include<netinet/in.h>
 #include<arpa/inet.h>
 #include<pthread.h>
-
 void* Func1(void* p)
 {
     struct sockaddr_in* addr = (struct sockaddr_in*)p;

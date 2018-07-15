@@ -3,10 +3,8 @@
 #include<string.h>
 #include<unistd.h>
 #include<pthread.h>
-
 pthread_cond_t cond;
 pthread_mutex_t mutex;
-
 void *r1(void *arg)
 {
     while(1)

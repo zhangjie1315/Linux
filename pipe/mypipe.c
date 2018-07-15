@@ -3,6 +3,7 @@
 #include<string.h>
 int main()
 {
+
     int fd[2];
     int ret = pipe(fd);
     if(ret < 0)

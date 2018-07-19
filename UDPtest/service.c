@@ -9,6 +9,7 @@
 int main(int argc, char *argv[]){
     if(argc != 3){
         printf("Usage: %s [ip] [port]\n", argv[0]);
+
         return 1;
     }
     int sock = socket(AF_INET, SOCK_DGRAM, 0);

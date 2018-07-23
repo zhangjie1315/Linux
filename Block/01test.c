@@ -9,7 +9,6 @@
 #include<errno.h>
 #include<sys/select.h>
 #define N 4
-
 void handler(int s)
 {
     printf("recv %d\n",s);

@@ -7,7 +7,6 @@
 #include <keyboard.h>
 #include <tetris.h>
 #include <stdlib.h>
-
 void draw_element(int x, int y, int c)
 {
 	x *= 2;

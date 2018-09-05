@@ -4,8 +4,10 @@
 int main()
 {
     int c;
+
     struct termios ts;
     tcgetattr(0, &ts);
+
     ts.c_lflag &= ~ICANON;
     ts.c_lflag &= ~ECHO;  //关闭回显
     tcsetattr(0, TCSANOW, &ts);  //输入立即显示

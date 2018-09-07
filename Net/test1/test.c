@@ -6,11 +6,9 @@
 #include<pthread.h>
 void* Func1(void* p)
 {
-    
     struct sockaddr_in* addr = (struct sockaddr_in*)p;
     while(1)
     {
-
         char* ptr = inet_ntoa(addr->sin_addr);
         printf("addr1:%s\n",ptr);
     }

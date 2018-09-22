@@ -12,10 +12,12 @@
 void handler(int s)
 {
     printf("recv %d\n",s);
+
 }
 int main(void)
 {
     int tfd = timerfd_create(CLOCK_MONOTONIC,TFD_CLOEXEC);
+
     if(tfd == -1)perror("timerfd_create"),exit(1);
     struct itimerspec isp;
     memset(&isp,0x00,sizeof isp);
